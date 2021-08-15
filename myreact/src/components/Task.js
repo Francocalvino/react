@@ -8,7 +8,7 @@ class Task extends Component {
         return {
             fontSize: '22px',
             color:this.props.task.done ? 'green' : 'red',
-            textDecoration: 'none'
+            textDecoration: this.props.task.done ? 'line-through' : 'none',
         }
     }
 
